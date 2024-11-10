@@ -188,7 +188,6 @@ function removeFromFavoritesTMDB(movieId) {
   .then(response => response.json())
   .then(data => {
       if (data.success) {
-          alert('Movie removed movie from TMDB favorites!');
       } else {
           alert('Failed to remove movie from favorites.');
       }
